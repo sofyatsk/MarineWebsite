@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>WMJ Marine | Cart</title>
+       
+<!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu" />     
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<!-- css and js -->             
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.min.css">    
+
+ </head>
+    
+ <body>  
+<!-- header/nav -->
+  
+  <header class="site-header"> 
+   <nav class="main-nav">
+   
+<!-- hamburger -->
+   <a href="../home.html" class="logo"><img src="../assets/logo4.png" alt="WMJ Marine logo"></a>
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+    <label for="menu-toggle" class="hamburger">
+      <span class="material-symbols-outlined">menu</span>
+    </label>    
+    
+
+<!-- navigation menu -->
+    <ul class="nav-menu">
+      <li><a href="../home.html">Home</a></li>
+      <li><a href="../pages/Log_in.html">Log In</a></li>      
+      <li><a href="../pages/Cart.html" class="btn nav-cart">My Cart</a></li> 
+    </ul>
+  </nav>
+  </header>
+    
+  <main>      
+<!-- Cart -->   
+  
+    <nav class="breadcrumbs">
+    <a href="../home.html">Home &gt;</a>
+    <a href="../pages/Cart.html">Cart &gt;</a>
+   </nav>
+           
+   <section class="cart">    
+
+    <h2 class="section-title">Your Order</h2>
+    <hr>    
+        
+    <div class="product-grid-cart">
+     <article class="product-card-cart">
+       <div class="quantity">
+        <button type="button" class="qty-minus">−</button>
+        <input type="number" class="qty-input" value="1" min="1">
+        <button type="button" class="qty-plus">+</button>
+      </div>
+     </article>               
+     
+     <article class="product-card-cart">
+       <a href="#"><img src="../assets/sailboat2.jpg" alt="WindTrak 15 Windvane Components"></a>
+     </article>
+     
+     <article>
+      <h3 class="title">Davis Instruments</h3>
+      <p class="product-meta-cart">WindTrak 15 Windvane Components"</p>      
+     </article>
+     
+     <article>
+      <p class="price-cart">$44.43</p>   
+     </article>
+          
+     <!--<article class="product-card">-->
+     <article class="product-card-cart">
+       <div class="quantity">
+        <button type="button" class="qty-minus">−</button>
+        <input type="number" class="qty-input" value="1" min="1">
+        <button type="button" class="qty-plus">+</button>
+      </div>
+     </article>         
+     
+     <article class="product-card-cart">
+      <a href="#"><img src="../assets/sailboat8.jpg" alt="Zenith 5 Single Line Kites"></a>
+     </article>
+     
+     <article>
+      <h3>Prism Design Inc.</h3>
+      <p class="product-meta-cart">Zenith 5 Single Line Kites</p>     
+     </article>
+     
+     <article>
+      <p class="price-cart">$44.48</p>
+     </article>          
+    </div>
+   </section>
+
+   <section class="totals">
+         <article>
+         <p> </p>
+         </article>
+     
+         <article>
+         <p> </p>
+         </article>
+         
+         <article>
+         <h3>Sub Total</h3>     
+         </article>
+     
+         <article>
+         <p class="price-cart">$89.92</p>
+         </article>
+     
+         <article>
+         <p> </p>
+         </article>
+     
+         <article>
+         <p> </p>
+         </article>
+         
+         <article>
+         <h3>Tax</h3>     
+         </article>
+     
+         <article>
+         <p class="price-cart">$7.64</p>
+         </article>
+        
+         <article>
+         <p> </p>
+         </article>
+     
+         <article>
+         <p> </p>
+         </article>
+         
+         <article>
+         <h3>Total</h3>     
+         </article>
+     
+         <article>
+         <p class="price-cart">$97.56</p>
+         </article>               
+   </section>
+
+<section class="both">
+ <section class="Shipping">    
+    <h2 class="section-title">Shipping</h2>
+    <hr>     
+    <form action="#" method="post" enctype="text/plain" id="involve">                    
+        <div class="container">
+        <section>
+            <fieldset class="border1">
+            <legend>Introduce your Information</legend>
+                <ul>
+                  <li>
+                  <label for="name">Your Name</label>
+                  <input type="text" id="name" maxlength="35" required>
+                  </li>
+
+                  <li>
+                  <label for="address">Address</label>
+                  <input type="text" id="address" maxlength="25" required>
+                  </li>
+                  
+                  <li>
+                  <label for="city">City</label>
+                  <input type="text" id="city" maxlength="22" required>
+                  </li>
+                  
+                  <li>
+                  <label for="state">State</label>
+                  <select name="state" id="state">                  
+                  <option value="NV">AL</option>
+                  <option value="OR">AK</option>                            
+                  <option value="OR">AZ</option>                            
+                  <option value="OR">AR</option>
+                  <option value="NV">CA</option>
+                  <option value="OR">CO</option>
+                  <option value="OR">CT</option>
+                  <option value="OR">DE</option>
+                  <option value="OR">FL</option>
+                  <option value="OR">GA</option>
+                  <option value="OR">HI</option>
+                  <option value="OR">ID</option>
+                  <option value="NV">IL</option>
+                  <option value="OR">IN</option>                            
+                  <option value="OR">IA</option>                            
+                  <option value="OR">KS</option>
+                  <option value="OR">KY</option>
+                  <option value="OR">LA</option>
+                  <option value="OR">ME</option>
+                  <option value="OR">MD</option>
+                  <option value="OR">MA</option>
+                  <option value="OR">MI</option>
+                  <option value="OR">MN</option>
+                  <option value="OR">MS</option>
+                  <option value="OR">MO</option>
+                  <option value="OR">MT</option>
+                  <option value="OR">NE</option>
+                  <option value="OR">NV</option>
+                  <option value="OR">NH</option>
+                  <option value="OR">NJ</option>
+                  <option value="OR">NM</option>
+                  <option value="OR">NY</option>
+                  <option value="OR">NC</option>
+                  <option value="OR">ND</option>
+                  <option value="OR">OH</option>
+                  <option value="OR">OK</option>
+                  <option value="OR">OR</option>
+                  <option value="OR">PA</option>
+                  <option value="OR">RI</option>
+                  <option value="OR">SC</option>
+                  <option value="OR">SD</option>
+                  <option value="OR">TN</option>
+                  <option value="OR">TX</option>
+                  <option value="OR">UT</option>
+                  <option value="OR">VT</option>
+                  <option value="OR">VA</option>
+                  <option value="OR">WA</option>
+                  <option value="OR">WV</option>
+                  <option value="OR">WI</option>
+                  <option value="OR">WY</option>                   
+                  </select>
+                  </li>
+
+                  <li>                  
+                  <label for="zipcode">ZIP Code:</label>
+                  <input type="text" id="zipcode" name="zipcode" pattern="^\d{5}(-\d{4})?$" title="Enter a valid 5-digit ZIP code or ZIP+4 (e.g., 12345 or 12345-6789)" maxlength="10">
+                  </li>
+                </ul>
+                </fieldset>
+         </section>
+         </div>
+      </form>
+  </section>
+  
+  <section class="Payment"> 
+      <h2 class="section-title">Payment</h2>
+      <hr> 
+      <div class="PaymentOptions">
+          <article>
+             <input type="radio" id="debit" name="favorite">            
+          </article>
+         
+          <article>
+             <label for="debit">Debit/Credit</label>  
+          </article>
+         
+         <article>
+             <img src="../assets/visa.jpg" alt="Visa">
+          </article>
+          
+          <article>
+            <input type="radio" id="venmo" name="favorite">            
+          </article>
+         
+          <article>
+              <label for="venmo">Venmo</label>
+          </article>
+          
+          <article>
+              <img src="../assets/venmo.jpg" alt="Visa">    
+          </article>
+          
+          <article>
+            <input type="radio" id="paypal" name="favorite">            
+          </article>          
+          
+          <article>
+            <label for="paypal">Paypal</label>  
+          </article>
+          
+          <article>
+            <img src="../assets/PayPal.jpg" alt="Visa">  
+          </article>
+      </div>      
+  </section>
+</section>
+  <section class="SubmitPayment">
+      <button type="submit" class="btn">Place your Order</button>
+  </section>
+</main> 
+
+<!-- footer -->  
+  <footer class="site-footer">
+    <div class="footer-brand">
+     <a href="../home.html" class="logo"><img src="../assets/logo2.png" alt="WMJ Marine logo"></a>
+    </div>
+    
+    <nav class="footer-nav"> 
+      <ul> 
+       <li><a href="../pages/About_us.html">About us</a></li>
+       <li><a href="../pages/Location.html">Location</a></li>
+       <li><a href="../pages/Blog.html">Blog</a></li>
+       <li><a href="../pages/Faq.html">FAQ</a></li>
+       <li><a href="../pages/Privacy.html">Privacy Policy</a></li>
+       <li><a href="../pages/TechSupport.html">Tech Support</a></li>
+      </ul>   
+    </nav>
+    
+    <div class="social">
+      <ul> 
+       <li><a href="#"><strong><img src="../assets/facebook.svg" class="sm-icon" alt="facebook"></strong></a></li>
+       <li><a href="#"><strong><img src="../assets/linkedIn.svg" class="sm-icon" alt="linkedIn"></strong></a></li>
+       <li><a href="#"><strong><img src="../assets/youtube.svg" class="sm-icon" alt="youtube"></strong></a></li>
+       <li><a href="#"><strong><img src="../assets/instagram.svg" class="sm-icon" alt="instagram"></strong></a></li>
+      </ul>   
+    </div>
+  </footer>
+  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<script>
+  $(document).ready(function () {
+  $('.quantity').each(function () {
+    const $qty = $(this);
+    const $input = $qty.find('.qty-input');
+    const $minus = $qty.find('.qty-minus');
+    const $plus = $qty.find('.qty-plus');
+
+    $minus.on('click', function () {
+      if ($input.val() > 1) {
+        $input.val(Number($input.val()) - 1);
+      }
+    });
+
+    $plus.on('click', function () {
+      $input.val(Number($input.val()) + 1);
+    });
+  });
+});
+</script>
+  
+</body>
+</html>

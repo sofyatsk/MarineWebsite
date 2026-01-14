@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>WMJ Marine | FAQ</title>
+       
+<!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu" />     
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<!-- css and js -->             
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.min.css">
+    
+    <script src="../js/jquery-3.7.1.min.js"></script>
+ </head>
+    
+ <body>  
+<!-- header/nav -->  
+  <header class="site-header"> 
+   <nav class="main-nav">
+   
+<!-- hamburger -->
+  <a href="../home.html" class="logo"><img src="../assets/logo4.png" alt="WMJ Marine logo"></a> 
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+
+    <label for="menu-toggle" class="hamburger">
+     <span class="material-symbols-outlined">menu</span>
+    </label>
+
+<!-- navigation menu -->
+    <ul class="nav-menu">
+      <li><a href="../home.html">Home</a></li>
+      <li><a href="../pages/Log_in.html">Log In</a></li>     
+      <li><a href="../pages/Cart.html" class="btn nav-cart">My Cart</a></li> 
+    </ul>
+   </nav>
+  </header>
+  
+  <!-- MAIN -->
+  <main class="faq-page">
+
+    <!-- FAQ HERO -->
+    <section class="faq-hero">
+      <h1>Frequently Asked Questions</h1>
+      <p>Find quick answers to common questions about WMJ Marine products, orders, and support.</p>
+    </section>
+
+    <!-- FAQ ACCORDION -->
+    <section class="faq-list">
+
+      <div class="faq-item">
+        <button class="faq-question">
+          What is your return policy?
+          <i class="fas fa-chevron-down"></i>
+        </button>
+        <div class="faq-answer">
+          <p>
+            We accept returns within 30 days of purchase as long as the item is unused and in its original packaging.
+            Contact our support team to begin the return process.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          How long does shipping take?
+          <i class="fas fa-chevron-down"></i>
+        </button>
+        <div class="faq-answer">
+          <p>
+            Most orders ship within 1–2 business days. Delivery typically takes 3–7 days depending on your location.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          Do you offer international shipping?
+          <i class="fas fa-chevron-down"></i>
+        </button>
+        <div class="faq-answer">
+          <p>
+            Yes, we ship internationally. Shipping rates and delivery times vary by country.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          How can I contact customer support?
+          <i class="fas fa-chevron-down"></i>
+        </button>
+        <div class="faq-answer">
+          <p>
+            You can reach us by phone at (619) 555‑4821 or email us at support@wmjmarine.com.
+          </p>
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+
+<!-- FAQ SCRIPT (Accordion Toggle) -->
+  <script>
+    const faqButtons = document.querySelectorAll(".faq-question");
+
+    faqButtons.forEach(btn => {
+      btn.addEventListener("click", () => {
+        btn.classList.toggle("active");
+        const answer = btn.nextElementSibling;
+        answer.style.display = answer.style.display === "block" ? "none" : "block";
+      });
+    });
+  </script>
+  
+<!-- footer -->  
+  <footer class="site-footer">
+    <div class="footer-brand">
+     <a href="../home.html" class="logo"><img src="../assets/logo2.png" alt="WMJ Marine logo"></a>
+    </div>
+    
+    <nav class="footer-nav"> 
+      <ul> 
+       <li><a href="../pages/About_us.html">About us</a></li>
+       <li><a href="../pages/Location.html">Location</a></li>
+       <li><a href="../pages/Blog.html">Blog</a></li>
+       <li><a href="../pages/Faq.html">FAQ</a></li>
+       <li><a href="../pages/Privacy.html">Privacy Policy</a></li>
+       <li><a href="../pages/TechSupport.html">Tech Support</a></li>
+      </ul>   
+    </nav>
+    
+    <div class="social">
+      <ul> 
+       <li><a href="#"><strong><img src="../assets/facebook.svg" class="sm-icon" alt="facebook"></strong></a></li>
+       <li><a href="#"><strong><img src="../assets/linkedIn.svg" class="sm-icon" alt="linkedIn"></strong></a></li>
+       <li><a href="#"><strong><img src="../assets/youtube.svg" class="sm-icon" alt="youtube"></strong></a></li>
+       <li><a href="#"><strong><img src="../assets/instagram.svg" class="sm-icon" alt="instagram"></strong></a></li>
+      </ul>   
+    </div>
+  </footer>
+
+</body>
+</html>

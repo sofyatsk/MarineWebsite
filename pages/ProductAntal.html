@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>WMJ Marine | Product</title>
+        
+<!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu" />     
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<!-- css and js -->             
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.min.css">
+    
+    </head>
+    <body>
+
+ <!-- header/nav -->
+  
+  <header class="site-header"> 
+   <nav class="main-nav">
+   
+<!-- hamburger -->
+ <a href="../home.html" class="logo"><img src="../assets/logo4.png" alt="WMJ Marine logo"></a>
+ 
+  <input type="checkbox" id="menu-toggle" class="menu-toggle">
+
+  <label for="menu-toggle" class="hamburger">
+  <span class="material-symbols-outlined">menu</span>
+  </label>
+
+<!-- navigation menu -->
+    <ul class="nav-menu">
+      <li><a href="../pages/Log_in.html">Log in</a></li>
+      <li><a href="../home.html">Home</a></li>
+      <li><a href="../pages/Cart.html" class="btn nav-cart">My Cart</a></li> 
+    </ul>
+   </nav>
+  </header>
+  
+<main class="product-page">
+
+<!-- Breadcrumbs -->
+  <nav class="breadcrumbs">
+    <a href="../home.html">Home</a> ›
+    <a href="../pages/SailBoatParts.html">Sailboat Parts</a> ›
+    <a href="../pages/SailBoatBlocks.html">Blocks and Hardware</a> ›
+    <span>Antal Marine Hardware</span>
+  </nav>
+
+<!-- Product -->
+  <section class="product">
+
+<!-- Gallery -->
+  <div class="product-gallery">
+   <div class="main-image">
+    <img
+      id="currentImage"
+      src="../assets/Antal3.webp"
+      alt="Antal"
+    >
+    <button class="gallery-arrow prev">‹</button>
+    <button class="gallery-arrow next">›</button>
+   </div>
+
+   <div class="thumbnails">
+    <img src="../assets/Antal3.webp" alt="Antal" class="thumb active">
+    <img src="../assets/Antal2.webp" alt="Antal" class="thumb">
+   </div>
+  </div>
+
+<!-- Info -->
+    <div class="product-info">
+      <h1>ANTAL MARINE HARDWARE</h1>
+      <p class="material">Barber Snatch Block</p>
+      <p class="price">$188.14</p>
+
+      <div class="rating">
+        ★★★★★ <span>(202)</span> | <a href="../pages/Faq.html">Q & A</a>
+      </div>
+
+<!-- Options -->
+      <select>
+        <option>Barber Block</option>
+        <option value="scoop">Snatch Block</option>
+        <option value="flat">Bullet Block</option>
+      </select>
+
+      <select>
+        <option>40 mm</option>
+        <option value="15">60 mm</option>
+        <option value="20">90 mm</option>
+      </select>
+
+<!-- Quantity -->
+      <div class="quantity">
+        <button type="button" class="qty-minus">−</button>
+        <input type="number" class="qty-input" value="1" min="1">
+        <button type="button" class="qty-plus">+</button>
+      </div>
+
+      <button class="btn add-to-cart">Add to cart</button>
+      
+    </div>
+  </section>
+
+<!-- Accordion -->
+  <section class="accordion">
+
+    <div class="accordion-item">
+      <button class="accordion-header">Description <span>+</span></button>
+      <div class="accordion-content">
+        <p>The Antal Barber Block is a snatch block with low-friction-ring head. It provides an immediate entry of the sheet (the cheekplate revolves around the sheave axes allowing the block to open) along with an easy 2:1 control (a line through the ring allows the adjustment of the block height).</p>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <button class="accordion-header">Features <span>+</span></button>
+      <div class="accordion-content">
+        <p>Low-friction-ring head. Immediate entry of head. Delrin side ball bearings</p>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <button class="accordion-header">Technical Information <span>+</span></button>
+      <div class="accordion-content">
+        <p>Hard-anodized and Teflon-coated aluminum cheek plates with yellow rubber side protectors.</p>
+      </div>
+    </div>
+
+  </section>
+
+<!-- bestseller -->   
+   <section class="bestseller">
+    <h2 class="section-title">BEST-SELLER</h2>
+    
+    <div class="product-grid">
+    
+     <article class="product-card">
+      <a href="../pages/ProductAirmar.html"><img src="../assets/chirp-sonar-transducers.png" alt="Airmar"></a>
+      <h3>Airmar Sonar Transducers</h3>
+      <p class="product-meta">B175C-0-H 1KW Broadband CHIRP</p>
+      <p class="price">$1,299.00</p>
+     </article>
+     
+     <article class="product-card">
+      <a href="../pages/ProductFuruno.html"><img src="../assets/furuno-radar-antenna.png" alt="Radar"></a>
+      <h3>Furuno Radar Antenna</h3>
+      <p class="product-meta">DRS4DNXT 48nm 24"</p>
+      <p class="price">$2,995.00</p>
+     </article>
+     
+     <article class="product-card">
+     <a href="../pages/ProductMotor.html"><img src="../assets/minn-kota-trolling-motor.png" alt="Motor"></a>
+     <h3>Minn Kota Trolling Motor</h3>
+     <p class="product-meta">Dual Spectrum CHIRP · 24V · 80LB</p>
+     <p class="price">$3,199.99</p>
+     </article>
+     
+    </div>
+   </section>
+
+</main>
+
+<!-- footer -->  
+  <footer class="site-footer">
+    <div class="footer-brand">
+     <a href="../home.html" class="logo"><img src="../assets/logo2.png" alt="WMJ Marine logo"></a>
+    </div>
+    
+    <nav class="footer-nav"> 
+      <ul> 
+       <li><a href="../pages/About_us.html">About us</a></li>
+       <li><a href="../pages/Location.html">Location</a></li>
+       <li><a href="../pages/Blog.html">Blog</a></li>
+       <li><a href="../pages/Faq.html">FAQ</a></li>
+       <li><a href="../pages/Privacy.html">Privacy Policy</a></li>
+       <li><a href="../pages/TechSupport.html">Tech Support</a></li>
+      </ul>   
+    </nav>
+    
+    <div class="social">
+      <ul> 
+       <li><a href="#"><strong><img src="../assets/facebook.svg" class="sm-icon" alt="facebook"></strong></a></li>
+       <li><a href="#"><strong><img src="../assets/linkedIn.svg" class="sm-icon" alt="linkedIn"></strong></a></li>
+       <li><a href="#"><strong><img src="../assets/youtube.svg" class="sm-icon" alt="youtube"></strong></a></li>
+       <li><a href="#"><strong><img src="../assets/instagram.svg" class="sm-icon" alt="instagram"></strong></a></li>
+      </ul>   
+    </div>
+  </footer>
+    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<script>
+$(function () {
+  console.log('Gallery JS loaded');
+
+  // gallery
+  const $thumbs = $('.thumb');
+  const $currentImage = $('#currentImage');
+  let currentIndex = 0;
+
+  // init
+  $thumbs.each(function (index) {
+    if ($(this).hasClass('active')) {
+      currentIndex = index;
+      $currentImage.attr('src', $(this).attr('src'));
+    }
+  });
+
+  // thumb click
+  $thumbs.on('click', function () {
+    currentIndex = $(this).index();
+    updateGallery();
+  });
+
+  // next
+  $('.gallery-arrow.next').on('click', function () {
+    currentIndex = (currentIndex + 1) % $thumbs.length;
+    updateGallery();
+  });
+
+  // prev
+  $('.gallery-arrow.prev').on('click', function () {
+    currentIndex = (currentIndex - 1 + $thumbs.length) % $thumbs.length;
+    updateGallery();
+  });
+
+  function updateGallery() {
+    const newSrc = $thumbs.eq(currentIndex).attr('src');
+
+    $currentImage.fadeOut(150, function () {
+      $(this).attr('src', newSrc).fadeIn(150);
+    });
+
+    $thumbs.removeClass('active');
+    $thumbs.eq(currentIndex).addClass('active');
+  }
+
+  // accordion
+  $('.accordion-header').on('click', function () {
+    const content = $(this).next();
+    const icon = $(this).find('span');
+
+    content.slideToggle();
+    icon.text(icon.text() === '+' ? '−' : '+');
+  });
+
+  // quantity
+  document.querySelectorAll('.quantity').forEach(qty => {
+    const input = qty.querySelector('.qty-input');
+    const minus = qty.querySelector('.qty-minus');
+    const plus = qty.querySelector('.qty-plus');
+
+    minus.addEventListener('click', () => {
+      if (input.value > 1) {
+        input.value--;
+      }
+    });
+
+    plus.addEventListener('click', () => {
+      input.value++;
+    });
+  });
+
+});
+</script>
+
+    </body>
+</html>
